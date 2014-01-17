@@ -1,0 +1,19 @@
+body {
+	background:#303030;
+}
+
+
+#canvasBg {
+	display:block;
+	background:#ffffff;
+	margin:100px auto 0px;
+}
+
+#speler1 {
+	cursor: pointer;
+}
+
+/*#canvasSpeler, #canvasBaas, #canvasTelefoon, #canvasVertrouwelijkDocument {
+	display:block;
+	margin:-500px auto 0px;
+}*/
