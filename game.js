@@ -64,6 +64,7 @@ var klik_kluis_opbergen;
 var remcocheckrapport;
 var gelukkigkluis;
 var fotoremco;
+var kindSpreekt;
 
 var kantineStatus = false;
 var kantoorSpelerStatus = 0;
@@ -450,6 +451,7 @@ function init() {
 	gelukkigkluis = document.getElementById("gelukkigkluis");
 	fotoremco = document.getElementById("fotoremco");
 	introductieHenk = document.getElementById("introductieHenk");
+	kindSpreekt = document.getElementById("kindSpreekt");
 }
 
 function laadGame() {
@@ -1166,6 +1168,7 @@ function mouseClickedDeurKnopButtonKantineExtern(e) {
 			//telefoon1.draw();
 			drawKantineKind();
 			drawSpelerNeutraalKantine();
+			kindSpreekt.play();
 			//kind1.draw();
 			//soundEfx2.play();
 
@@ -1189,6 +1192,7 @@ function mouseClickedKantineKindButton(e) {
 			//document.addEventListener('click', mouseClickedTelefoonButton, false);
 			//document.addEventListener('click', mouseClickedKluisButton, false);
 			clearScreen();
+			kindSpreekt.pause();
 			lieflunchmee.play();
 			//drawGang();
 			
@@ -1268,7 +1272,7 @@ function mouseClickedDeurKnopButtonKantoorSpelerExtern(e) {
 				document.addEventListener('mousemove', mouseMovedListenerKantoorSpelerBadEndingTekstBallonRechtsEnDeur, false);
 				document.addEventListener('click', mouseClickedTekstBallonButtonRechtsKantoorSpelerBadEnding1, false);
 				document.addEventListener('click', mouseClickedTelefoonButton, false);
-				document.addEventListener('click', mouseClickedKluisButton, false);
+				//document.addEventListener('click', mouseClickedKluisButton, false);
 				clearScreen();
 				//drawGang();
 				
